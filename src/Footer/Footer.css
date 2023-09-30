@@ -1,0 +1,14 @@
+.footer {
+  height: 66px;
+  width: 100%;
+  background-color: #000000;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

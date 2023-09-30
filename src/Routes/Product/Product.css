@@ -1,0 +1,211 @@
+.product__container__top {
+  position: relative;
+  /* border: 1px solid red; */
+}
+
+.product__container__top::after {
+  content: " ";
+  position: absolute;
+  width: 200%;
+  height: 1px;
+  background-color: #111111;
+  bottom: 2px;
+  left: -5px;
+}
+
+.product__container__top::before {
+  content: "";
+  position: absolute;
+  background: url("../../Assets/StarIcon_black.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 22px;
+  height: 22px;
+  left: -10px;
+  bottom: -9px;
+}
+
+.container__top__heading {
+  font-family: "Syne", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.container__bottom__left {
+  overflow: auto;
+  /* Enable scrolling when content overflows */
+  scrollbar-width: none;
+  /* Hide standard scrollbar (for Firefox) */
+  -ms-overflow-style: none;
+  /* Hide standard scrollbar (for Internet Explorer and Edge) */
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  /* hide scroll bar */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.container__bottom__left::-webkit-scrollbar {
+  display: none;
+}
+
+.bottom__left__content {
+  width: 190%;
+}
+
+.container__bottom__left p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
+}
+
+.font_bold {
+  font-weight: bold !important;
+  /* font-size: 18px !important; */
+}
+
+.container__bottom__right {
+  width: 150%;
+  overflow: auto;
+  /* Enable scrolling when content overflows */
+  scrollbar-width: none;
+  /* Hide standard scrollbar (for Firefox) */
+  -ms-overflow-style: none;
+  /* Hide standard scrollbar (for Internet Explorer and Edge) */
+  display: flex;
+  gap: 25px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  /* hide scroll bar */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  margin-top: 20px;
+}
+
+.container__bottom__right::-webkit-scrollbar {
+  display: none;
+}
+
+.card__image {
+  width: 310px;
+  height: 322px;
+  position: relative;
+}
+
+.prod__img {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.prod__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.card__arrow__img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 7px;
+  padding: 3px;
+}
+
+.card__content h2 {
+  font-size: 26px;
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+  line-height: 31.2px;
+}
+
+.card__content p {
+  color: #16161580;
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 16.42px;
+}
+
+.product__filter {
+  color: #111111;
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 16.42px;
+  margin-bottom: 5px;
+  /* padding: 5px; */
+  padding-left: 8px;
+}
+
+.product__filter select {
+  padding: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .container__top__heading {
+    font-size: 90px;
+    font-weight: 600;
+  }
+
+  .product__container__top::after {
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+
+  .container__top__heading h1 {
+    position: relative;
+  }
+
+  .container__top__heading h1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #111111;
+    bottom: 18px;
+    left: 0;
+  }
+
+  .product__container__top::before {
+    content: "";
+    position: absolute;
+    background: url("../../Assets/StarIcon_black.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 22px;
+    height: 22px;
+    left: -10px;
+    bottom: 7px;
+  }
+
+  .container__bottom__left p {
+    font-size: 18px;
+  }
+
+  .font_bold {
+    font-weight: bold !important;
+    font-size: 26px !important;
+  }
+
+  .bottom__left__content {
+    width: 100%;
+  }
+}
